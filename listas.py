@@ -21,7 +21,7 @@ def tiene_dos_vocales(cadena):
     contador = sum(1 for letra in cadena if letra in vocales)
     return contador >= 2
 
-lista = ["hola", "casa", "sol", "luz", "tr"]
+lista = ["hola", "casa", "sol", "luz"]
 
 resultado = next((palabra for palabra in lista if tiene_dos_vocales(palabra)), "No existe")
 print(resultado)
